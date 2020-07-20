@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta content="" name="author" />
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <!-- css -->
+      <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="./css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+      <link href="./css/style.min.css" rel="stylesheet" type="text/css" />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+      <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+ 
+
+   </head>
+   <body>
+       
+      <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+        <div class="container">
+            <a class="navbar-brand logo" href="layout-one-1.html">
+           <img src="images/logo-dark.png" alt="" class="logo-dark" height="24" />
+           <img src="images/logo-light.png" alt="" class="logo-light" height="24" />
+           </a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+           <i class="mdi mdi-menu"></i>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
+                 <li class="nav-item active">
+                    <a href="#home" class="nav-link">Home</a>
+                 </li>
+                
+                 <li class="nav-item submenu dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Courses</a>
+                    <ul class="dropdown-menu">
+                       <li class="nav-item"><a class="nav-link" href="blog.html">Beginner </a></li>
+                       <li class="nav-item"><a class="nav-link" href="blog-details.html">Intermediate</a></li>
+                       <li class="nav-item"><a class="nav-link" href="blog-details.html">Advance</a></li>
+                       <li class="nav-item"><a class="nav-link" href="blog-details.html">Pro</a></li>
+                    </ul>
+                 </li>
+                 <li class="nav-item">
+                    <a href="#features" class="nav-link">why SudoKidz</a>
+                 </li>
+
+                 <li class="nav-item">
+                    <a href="#features" class="nav-link">How it works?</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="#contact" class="nav-link">FAQ</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="#contact" class="nav-link">NGO</a>g
+                 </li>
+              </ul>
+              <ul class="navbar-nav navbar-center">
+                 <li class="nav-item">
+                    <a href="#login" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">Log in</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="#login" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter-1">Register</a>
+                 </li>
+              </ul>
+           </div>
+        </div>
+     </nav>
+     
+
+
+
+
+
+      <!-- Contact Us Start -->
+      <section class="section  bg-light" id="contact"  style="background-image: url(images/hero-1-bg-img.png)">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-6" data-aos="fade-up">
+                  <div class="text-center mb-5">
+                     <h3 class="title mb-3">Contact Us</h3>
+                     <p class="text-muted font-size-15">Et harum quidem rerum facilis est et expedita distinctio nam libero tempore cum soluta nobis eligendi cumque.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row align-items-center">
+               <div class="col-lg-7">
+                  <div class="custom-form mb-5 mb-lg-0">
+                     <div id="message"></div>
+                     <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <label for="name">Name*</label>
+                                 <input name="name" id="name" type="text" class="form-control" placeholder="Your name...">
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <label for="email">Email Address*</label>
+                                 <input name="email" id="email" type="email" class="form-control" placeholder="Your email...">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <div class="form-group">
+                                 <label for="comments">Message*</label>
+                                 <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Your message..."></textarea>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <button type="submit" id="submit" name="send" class="btn btn-primary">Send Message <i class="icon-size-15 ml-2 icon" data-feather="send"></i></button>
+                              <div id="simple-msg"></div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <div class="contact-detail text-muted ml-lg-5">
+                     <p class=""><i class="icon-xs icon mr-1" data-feather="mail"></i> : <span>support@website.com</span></p>
+                     <p class=""><i class="icon-xs icon mr-1" data-feather="link"></i> : <span>www.website.com</span></p>
+                     <p class=""><i class="icon-xs icon mr-1" data-feather="phone-call"></i> : <span>(+001) 123 456 7890</span></p>
+                     <p class=""><i class="icon-xs icon mr-1" data-feather="clock"></i> : <span>9:00 AM - 6:00 PM</span></p>
+                     <p class=""><i class="icon-xs icon mr-1" data-feather="map-pin"></i> : <span>1644 Deer Ridge Drive Rochelle Park, NJ 07662</span></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!-- Contact Us End -->
+      <!-- Footer Start -->
+      <!-- <section class="footer" style="background-image: url(images/footer-bg.png)">
+         </section>
+         <div class="footer-alt py-3">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-12">
+                         <div class="text-center">
+                             <p class="text-white-50 font-size-15 mb-0">2020 © </p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div> -->
+      <!-- Footer End -->
+      <!-- login Modal Start -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <div class="text-center">
+                     <h3 class="title mb-4">Welcome To Kids Code</h3>
+                     <h4 class="text-uppercase text-primary"><b>Login</b></h4>
+                  </div>
+                  <div class="login-form mt-4">
+                     <form>
+                        <div class="form-group">
+                           <label for="exampleInputEmail1">Username / Email</label>
+                           <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Youremail@gmail.com">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleInputPassword1">Password</label>
+                           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <a href="#" class="float-right text-muted font-size-15">Forgot Password.?</a>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="customCheck1">
+                           <label class="custom-control-label font-size-15" for="customCheck1">Remember Me</label>
+                        </div>
+                        <div class="text-center mt-4">
+                           <button type="submit" class="btn btn-primary">Login <i class="icon-size-15 icon ml-1" data-feather="arrow-right-circle"></i></button>
+                        </div>
+                     </form>
+                     <div class="position-relative text-center mt-4">
+                        <span class="login-border"></span>
+                        <p class="social-login text-muted font-size-17">Social Login</p>
+                     </div>
+                     <div class="text-center">
+                        <ul class="list-inline mt-2 mb-3">
+                           <li class="list-inline-item mr-3"><a href="#" class="login-social-icon icon-primary"><i class="icon-xs" data-feather="facebook"></i></a></li>
+                           <li class="list-inline-item mr-3"><a href="#" class="login-social-icon icon-info"><i class="icon-xs" data-feather="twitter"></i></a></li>
+                           <li class="list-inline-item mr-3"><a href="#" class="login-social-icon icon-danger"><i class="icon-xs" data-feather="instagram"></i></a></li>
+                           <li class="list-inline-item"><a href="#" class="login-social-icon icon-success"><i class="icon-xs" data-feather="linkedin"></i></a></li>
+                        </ul>
+                        <p class="text-muted mb-0">New User? <a href="#" class="text-primary">Signup</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- login Modal End -->
+      <!-- Register Modal Start-->
+      <div class="modal fade" id="exampleModalCenter-1" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <div class="text-center">
+                     <h3 class="title mb-4">Welcome To Kids Code</h3>
+                     <h4 class="text-uppercase text-primary"><b>Register</b></h4>
+                  </div>
+                  <div class="login-form mt-4">
+                     <form>
+                        <div class="form-group">
+                           <label for="exampleInputUsername">User Name</label>
+                           <input type="text" class="form-control" id="exampleInputUsername" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleInputEmail2">Email</label>
+                           <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Youremail@gmail.com">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleInputPassword2">Password</label>
+                           <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                           <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck2">
+                              <label class="custom-control-label font-size-15" for="customCheck2">Parent</label>
+                           </div>
+                        </div>
+                        <a href="#" class="float-right text-muted font-size-15">Forgot Password.?</a>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="customCheck2">
+                           <label class="custom-control-label font-size-15" for="customCheck2">Remember Me</label>
+                        </div>
+                        <div class="text-center mt-4">
+                           <button type="submit" class="btn btn-primary">Register <i class="icon-size-15 icon ml-1" data-feather="arrow-right-circle"></i></button>
+                        </div>
+                     </form>
+                     <div class="position-relative text-center mt-4">
+                        <span class="login-border"></span>
+                        <p class="social-login text-muted font-size-17">Social Login</p>
+                     </div>
+                     <div class="text-center">
+                        <ul class="list-inline mt-2 mb-3">
+                           <li class="list-inline-item mr-3"><a href="#" class="login-social-icon icon-primary"><i class="icon-xs" data-feather="facebook"></i></a></li>
+                           <li class="list-inline-item mr-3"><a href="#" class="login-social-icon icon-info"><i class="icon-xs" data-feather="twitter"></i></a></li>
+                           <li class="list-inline-item mr-3"><a href="#" class="login-social-icon icon-danger"><i class="icon-xs" data-feather="instagram"></i></a></li>
+                           <li class="list-inline-item"><a href="#" class="login-social-icon icon-success"><i class="icon-xs" data-feather="linkedin"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+      <div class="modal fade" id="exampleModalCenter-2" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <div class="text-center">
+                     <h4 class="text-uppercase text-primary"><b>Book a Free Demo</b></h4>
+                  </div>
+                  <div class="login-form mt-4">
+                     <form>
+                        <div class="form-group">
+                           <label for="exampleInputUsername">Parent Name</label>
+                           <input type="text" class="form-control" id="exampleInputUsername" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleInputEmail2">Email</label>
+                           <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Youremail@gmail.com">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleInputUsername">Kids name</label>
+                           <input type="text" class="form-control" id="exampleInputUsername" placeholder="Kids Name">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleInputUsername">Phone Number</label>
+                           <input type="text" class="form-control" id="exampleInputUsername" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleInputUsername">Kid Age</label>
+                           <div class="input-group">
+                               <select class="form-control" id="sel1">
+                                   <option selected="true" disabled="disabled">Age of Kid</option>
+                                 
+                                   <option>class 1</option>
+                                   <option>class 2-3</option>
+                                   <option>class 4-6</option>
+                                   <option>class 7-9</option>
+                                   <option>class 10+</option>
+                               </select>
+                           </div>
+                       </div>
+              
+                        <div class="form-group">
+                           <label >Date of Birth</label>
+                           <input type="date" name="bday" min="1000-01-01"
+                                  max="3000-12-31" class="form-control">
+                          </div>
+                  
+                      
+                    
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="customCheck3">
+                           <label class="custom-control-label font-size-15" for="customCheck3">Do you have laptop/PC at home for class?</label>
+                        </div>
+
+                    
+         
+
+         
+                     
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="customCheck2">
+                           <label class="custom-control-label font-size-15" for="customCheck2">I agree recive message via watsapp or call by the team </label>
+                        </div>
+                        
+   
+
+
+
+                        <div class="text-center mt-4">
+                           <button type="submit" class="btn btn-primary"> Book A Demo <i class="icon-size-15 icon ml-1" data-feather="arrow-right-circle"></i></button>
+                        </div>
+                     </form>
+                  
+                
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+ 
+      <script>
+         feather.replace()
+       </script>
+    
+     
+      <!-- Register Modal Start-->
+      <!-- javascript -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/scrollspy.min.js"></script>
+      <script src="js/jquery.easing.min.js"></script>
+      <!-- feather icon -->
+      <script src="js/feather.js"></script>
+      <!-- unicons icon -->
+      <script src="js/unicons.js"></script>
+      
+      <!-- Main Js -->
+      <script src="js/app.js"></script>
+      <script>
+         AOS.init();
+
+         
+
+       </script>
+ 
+
+
+     
+   </body>
+</html>
